@@ -1,0 +1,53 @@
+body {
+    background: none;
+}
+
+article {
+    width: 19cm; /* Leave 2cm for margins on A4 paper */
+    margin: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    page-break-after:always;
+    page-break-inside: avoid;
+}
+
+article>section {
+    padding-left: 5cm;
+    padding-right: 0;
+}
+
+section {
+}
+
+li, dl, article> section > p,article> section>h3 {
+    padding-left: 1cm;
+}
+
+h1 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h2 {
+    width: 4cm;
+    margin: 0 0 0 -5cm;
+}
+
+dt {
+    width: 2cm;
+}
+
+dd {
+    width: 8cm;
+}
+
+section, h2, h3, p {
+    page-break-inside: avoid;
+}
+
+section.pagebreak {
+    margin-bottom:2cm;
+}
